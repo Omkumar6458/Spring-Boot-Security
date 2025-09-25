@@ -1,15 +1,15 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core"   prefix="c"%>
 
-<a  href="addEmployee"> add more employee </a> 
+<a  href="addEmployee"> add more TASK </a> 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
 
 <table border=1>
   <tr>
-    <th>empno</th>
-    <th>ename</th>
-    <th>sal</th>
-    <th>deptno</th>
+    <th>Task no</th>
+    <th>TASK name</th>
+    <th>DATE </th>
+    <th>ASSIGN TO </th>
     <th>actions</th>
   </tr>    
 
@@ -23,8 +23,16 @@
           <td> 
              <a href="editEmployee?id=${emp.empno}"> <img src="imgs/edit_image.png"  width="40" height="40"> </a>
               &nbsp; &nbsp; &nbsp; &nbsp;
-             <a href="deleteEmployee?id=${emp.empno}"> <img src="imgs/delete_image.jpg" width="40" height="40"> </a>
-             
+			  <a href="deleteEmployee?id=${emp.empno}" onclick="return confirm('Are you sure you want to delete this TASK ?')">
+			      <img src="imgs/delete_image.jpg" width="40" height="40">
+			  </a>
+
+			 
+		
+		
+
+			
+			 
           </td>             
         </tr>
      </c:forEach>

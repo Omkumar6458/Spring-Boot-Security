@@ -4,8 +4,8 @@ public class EmployeeModel {
 
 	Integer empno;
 	String ename;
-	Double sal;
-	Integer deptno;
+	String sal;
+	String deptno;
 	
 	public Integer getEmpno() {
 		return empno;
@@ -19,16 +19,16 @@ public class EmployeeModel {
 	public void setEname(String ename) {
 		this.ename = ename;
 	}
-	public Double getSal() {
+	public String getSal() {
 		return sal;
 	}
-	public void setSal(Double sal) {
+	public void setSal(String sal) {
 		this.sal = sal;
 	}
-	public Integer getDeptno() {
+	public String getDeptno() {
 		return deptno;
 	}
-	public void setDeptno(Integer deptno) {
+	public void setDeptno(String deptno) {
 		this.deptno = deptno;
 	}
 	

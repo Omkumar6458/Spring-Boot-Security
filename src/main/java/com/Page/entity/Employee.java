@@ -5,7 +5,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name ="Data1")
+@Table(name ="Data2")
 public class Employee {
    
 	@Id
@@ -13,9 +13,9 @@ public class Employee {
 	
 	 private String ename;
 		
-		private Double sal;
+		private String sal;
 		
-		private Integer deptno;
+		private String deptno;
 		
 		
 	
@@ -35,19 +35,19 @@ public class Employee {
 		this.ename = ename;
 	}
 
-	public Double getSal() {
+	public String getSal() {
 		return sal;
 	}
 
-	public void setSal(Double sal) {
+	public void setSal(String sal) {
 		this.sal = sal;
 	}
 
-	public Integer getDeptno() {
+	public String getDeptno() {
 		return deptno;
 	}
 
-	public void setDeptno(Integer deptno) {
+	public void setDeptno(String deptno) {
 		this.deptno = deptno;
 	}
 

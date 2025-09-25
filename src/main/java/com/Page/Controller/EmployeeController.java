@@ -26,11 +26,29 @@ public class EmployeeController {
     public String getIndexPage() {
         return "index";
     }
-
+    @GetMapping("/denied")
+    public String accessDenied() {
+        return "denied"; // resolves to /WEB-INF/views/denied.jsp
+    }
     @GetMapping("/home")
     public String showHomePage() {
         return "home"; // Refers to index.html in src/main/resources/templates
     }
+    @GetMapping("/login")
+    public String home1() {
+        return "login";  // will load index.jsp
+    }
+
+    
+    @GetMapping("/login1")
+    public String home2() {
+        return "login1";  // will load index.jsp
+    }
+    @GetMapping("/login2")
+    public String home3() {
+        return "login2";  // will load index.jsp
+    }
+    
     
     
     @GetMapping("/")
